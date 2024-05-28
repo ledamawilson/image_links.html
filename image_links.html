@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#menu">Menu</a>
+</nav>
+
+<section id="home">
+    <h1>Welcome to My Webpage</h1>
+    <p>Explore the world of technology and nature through our curated content.</p>
+    <a href="https://www.example.com/technology">
+        <img src="tech-image.jpg" alt="Technology Image" width="300">
+    </a>
+</section>
+
+<section id="gallery">
+    <h1>Gallery</h1>
+    <div class="grid-container">
+        <a href="https://www.example.com/nature1"><img src="nature1.jpg" alt="Nature Image 1"></a>
+        <a href="https://www.example.com/nature2"><img src="nature2.jpg" alt="Nature Image 2"></a>
+        <a href="https://www.example.com/nature3"><img src="nature3.jpg" alt="Nature Image 3"></a>
+        <a href="https://www.example.com/nature4"><img src="nature4.jpg" alt="Nature Image 4"></a>
+        <a href="https://www.example.com/nature5"><img src="nature5.jpg" alt="Nature Image 5"></a>
+    </div>
+</section>
+
+<section id="menu">
+    <h1>Menu</h1>
+    <ul>
+        <li><a href="images/pizza.jpg">Pizza</a></li>
+        <li><a href="images/burger.jpg">Burger</a></li>
+        <li><a href="images/pasta.jpg">Pasta</a></li>
+        <li><a href="images/salad.jpg">Salad</a></li>
+        <li><a href="images/icecream.jpg">Ice Cream</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
